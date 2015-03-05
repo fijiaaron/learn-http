@@ -19,7 +19,7 @@ socket.connect(address);
 socket.close()
 ```
 
-see [src/main/test/SocketConnectionTest.java]
+see [src/main/test/SocketConnectionTest.java](src/main/test/SocketConnectionTest.java)
 
 
 
