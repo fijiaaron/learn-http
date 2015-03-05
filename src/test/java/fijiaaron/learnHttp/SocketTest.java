@@ -17,12 +17,11 @@ public class SocketTest {
     public void testSocketConnect() throws IOException {
         Socket socket = new Socket();
         InetSocketAddress address = new InetSocketAddress(hostname, port);
-        socket.connect(address);
 
+        socket.connect(address);
         assertTrue(socket.isConnected());
 
         socket.close();
-
         assertTrue(socket.isClosed());
     }
 }
