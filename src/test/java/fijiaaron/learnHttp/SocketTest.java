@@ -14,7 +14,7 @@ public class SocketTest {
     int port = 80;
 
     @Test
-    public void testSocketConnect() throws IOException {
+    public void should_open_and_close_socket_connection() throws IOException {
         Socket socket = new Socket();
         InetSocketAddress address = new InetSocketAddress(hostname, port);
 
