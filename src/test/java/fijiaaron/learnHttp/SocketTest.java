@@ -25,11 +25,4 @@ public class SocketTest {
 
         assertTrue(socket.isClosed());
     }
-
-    @Test
-    public void testSocketConnection() throws IOException {
-        SocketConnection connection = new SocketConnection();
-        connection.connect(hostname, port);
-        assertTrue(connection.socket.isConnected());
-    }
 }
