@@ -15,4 +15,8 @@ public class SocketConnection {
         InetSocketAddress address = new InetSocketAddress(hostname, port);
         socket.connect(address);
     }
+
+    public void disconnect() throws IOException {
+        socket.close();
+    }
 }

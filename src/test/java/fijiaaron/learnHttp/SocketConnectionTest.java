@@ -15,18 +15,19 @@ public class SocketConnectionTest {
     int port = 80;
 
     @Test
-    public void should_connect_to_host_and_port_via_socket() throws IOException {
+    public void should_connect_to_remote_host_via_socket() throws IOException {
         SocketConnection connection = new SocketConnection();
-        connection.connect(hostname, port);
 
+        connection.connect(hostname, port);
         assertTrue(connection.socket.isConnected());
     }
 
     @Test
-    public void should_close_socket() throws IOException {
+    public void should_close_socket_connection() throws IOException {
         SocketConnection connection = new SocketConnection();
-        connection.connect(hostname, port);
 
+        connection.connect(hostname, port);
+        connection.disconnect();
         assertTrue(connection.socket.isClosed());
     }
 }
